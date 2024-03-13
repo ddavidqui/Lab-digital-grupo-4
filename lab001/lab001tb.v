@@ -28,16 +28,40 @@ A_tb = 0;
 B_tb = 0;
 Ci_tb = 0;
 #100;
+A_tb = 0;
+B_tb = 0; 
+Ci_tb = 1;
+#100
+A_tb = 0;
+B_tb = 1; 
+Ci_tb = 0;
+#100
+A_tb = 0;
+B_tb = 1; 
+Ci_tb = 1;
+#100
 A_tb = 1;
 B_tb = 0; 
 Ci_tb = 0;
+#100
+A_tb = 1;
+B_tb = 0; 
+Ci_tb = 1;
+#100
+A_tb = 1;
+B_tb = 1; 
+Ci_tb = 0;
+#100
+A_tb = 1;
+B_tb = 1; 
+Ci_tb = 1;
 // PARA PODER CREAR EL VCD QUE ES LA SIMULACIÓN
 end
 
 initial begin: TEST_CASE
     $dumpfile("lab001.vcd");
     $dumpvars(-1,uut);
-    #600 $finish;
+    #800 $finish;
 end
 
 
