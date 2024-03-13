@@ -13,6 +13,10 @@
    - Visita el sitio web oficial de la distribución de Linux que deseas instalar (por ejemplo, Ubuntu, Fedora, Debian).
    - Descarga la imagen de instalación (archivo ISO) adecuada para tu arquitectura de hardware (32 o 64 bits).
 
+   ![](/Lab-digital-grupo-4/LAB00/imagenes/1CAP.png)
+
+   
+
 2. **Medio de instalación**
    - Si estás utilizando una unidad USB, utiliza un programa como Rufus (Windows) o dd (Linux) para crear un medio de arranque con la imagen ISO descargada.
    - Si estás utilizando un DVD, graba la imagen ISO en un DVD en blanco utilizando un software de grabación de discos.
@@ -43,3 +47,6 @@
 9. **Reiniciar la Computadora**
    - Una vez que se complete la instalación, reinicia la computadora y retira el medio de instalación.
    - La computadora debería arrancar desde el disco duro y mostrar el sistema operativo recién instalado.
+
+
+[def]: /imagenes/1CAP.png

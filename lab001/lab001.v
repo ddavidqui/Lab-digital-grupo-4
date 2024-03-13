@@ -1,5 +1,5 @@
 
-module lab01(
+module lab001(
 input A,
 input B,
 input Ci,
