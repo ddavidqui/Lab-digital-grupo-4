@@ -1,4 +1,4 @@
-`include "lab001/lab001.v" // Se llama el .v donde va la logica
+`include "lab001.v" // Se llama el .v donde va la logica
 `timescale 1ps/1ps 
 
 module lab001tb(); //EL modulo lo llamas como quieras aca lo llame igual que el archivo
@@ -6,7 +6,6 @@ module lab001tb(); //EL modulo lo llamas como quieras aca lo llame igual que el 
 reg A_tb; // Entradas de tu logica del archivo anterior
 reg B_tb; // mi segunda entrada
 reg Ci_tb; // Tercera entrada
-
 wire S_; //ESTAN SON LAS SALIDAS
 wire Co_; //SALIDAS
 
