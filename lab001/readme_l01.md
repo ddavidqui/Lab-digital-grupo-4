@@ -15,14 +15,14 @@ El objetivo de este laboratorio es diseñar y simular un circuito lógico que im
 - El circuito a diseñar consta de entradas A, B y Ci, y produce las salidas S y Co según una función lógica específica.
 - El diseño del circuito se realiza en el módulo `lab001`, donde se definen las entradas, salidas y las interconexiones lógicas necesarias para implementar la función deseada.
 
-![](/Lab-digital-grupo-4/lab001/imagenes01/lab001.png)
+![](/lab001/imagenes01/lab001.png)
 
 ### 2. Descripción del Testbench:
 - Se crea un archivo de testbench en Verilog llamado "lab001tb.v" para simular el funcionamiento del circuito diseñado.
 - En el testbench, se instancia el módulo del diseño (`lab001`) y se proporcionan los valores de entrada (`A_tb`, `B_tb` y `Ci_tb`) para evaluar el comportamiento del circuito.
 - Se establecen los valores de entrada y se observan las salidas del circuito después de un cierto período de tiempo para verificar su correcto funcionamiento.
 
-![](/Lab-digital-grupo-4/lab001/imagenes01/1lab001.png)
+![](/lab001/imagenes01/1lab001.png)
 
 
 ### 3. Simulación del Circuito:
@@ -30,7 +30,7 @@ El objetivo de este laboratorio es diseñar y simular un circuito lógico que im
 - Durante la simulación, se observan las formas de onda de las señales de entrada y salida del circuito.
 - Se comprueba si las salidas del circuito coinciden con las expectativas de acuerdo con la función lógica especificada.
 
-![](/Lab-digital-grupo-4/lab001/imagenes01/2lab001.png)
+![](/lab001/imagenes01/2lab001.png)
 
 ### 4. Generación de Resultados:
 - Se genera un archivo VCD (Value Change Dump) durante la simulación, que registra las señales de entrada y salida del circuito en cada ciclo de simulación.
@@ -39,5 +39,4 @@ El objetivo de este laboratorio es diseñar y simular un circuito lógico que im
 
 ## Resultados:
 Los resultados obtenidos de la simulación del circuito se encuentran registrados en el archivo "lab001.vcd" generado durante la ejecución del testbench. Estos resultados pueden ser analizados visualmente utilizando herramientas de visualización de formas de onda para verificar el correcto funcionamiento del circuito. donde efectivamente vemos que cumple con las tabla de verdad.
-![](/Lab-digital-grupo-4/lab001/imagenes01/tablalab001.png)
-
+![](/lab001/imagenes01/tablalab001.png)
