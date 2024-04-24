@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab002
-Mon Apr  8 09:43:59 2024
+Wed Apr 24 12:03:39 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Apr  8 09:43:59 2024              ;
+; Analysis & Synthesis Status        ; Failed - Wed Apr 24 12:03:39 2024              ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; lab002                                         ;
 ; Top-level Entity Name              ; lab002                                         ;
@@ -162,17 +162,19 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Apr  8 09:43:53 2024
+    Info: Processing started: Wed Apr 24 12:03:31 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB002 -c lab002
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file lab001.v
-    Info (12023): Found entity 1: lab001 File: /home/ddavid/Documents/Repositorio/Lab-digital-grupo-4/LAB002/lab001.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file src/lab001.v
+    Info (12023): Found entity 1: lab001 File: /home/ddavid/Documents/Repositorio/Lab-digital-grupo-4/LAB002/src/lab001.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file src/LAB002.v
+    Info (12023): Found entity 1: sum4b File: /home/ddavid/Documents/Repositorio/Lab-digital-grupo-4/LAB002/src/LAB002.v Line: 2
 Error (12007): Top-level design entity "lab002" is undefined
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 331 megabytes
-    Error: Processing ended: Mon Apr  8 09:43:59 2024
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:14
+    Error: Processing ended: Wed Apr 24 12:03:39 2024
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:19
 
 
