@@ -94,7 +94,6 @@ https://youtu.be/V6SwwRPSi0w?si=3nxMFMWkOmhUfmJv
 
 ![](/LAB002/Imagenes_Lab002/simulacion.png)
 
-# Sumas Binarias en un Bus de 4 bits
 
 # Sumas Binarias en un Bus de 4 bits
 
@@ -133,7 +132,7 @@ A continuación, se muestran varias sumas en binario realizadas en un bus de 4 b
     
    La suma de 6 en binario más 6 en binario es 12 en decimal y es lo que muestra la salida.
 
-*AQUÍ COMENZAMOS UTILIZANDO EL ACARREO YA QUE TENEMOS UN BUS DE 4 BIT, ENTONCES VEREMOS UN 1 EN EL ACARREO REPRESENTANDO EL MÁS SIGNIFICATIVO*
+**AQUÍ COMENZAMOS UTILIZANDO EL ACARREO YA QUE TENEMOS UN BUS DE 4 BIT, ENTONCES VEREMOS UN 1 EN EL ACARREO REPRESENTANDO EL MÁS SIGNIFICATIVO**
 
 ## 4. Cuarto caso:
   
