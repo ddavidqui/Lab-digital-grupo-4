@@ -1,0 +1,61 @@
+|sum4b
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+ci => ~NO_FANOUT~
+s[0] <= lab001:sum0.S
+s[1] <= lab001:sum1.S
+s[2] <= lab001:sum2.S
+s[3] <= lab001:sum3.S
+co <= lab001:sum3.Co
+
+
+|sum4b|lab001:sum0
+A => xor_1.IN0
+A => and_1.IN0
+B => xor_1.IN1
+B => and_1.IN1
+Ci => and_2.IN1
+Ci => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum4b|lab001:sum1
+A => xor_1.IN0
+A => and_1.IN0
+B => xor_1.IN1
+B => and_1.IN1
+Ci => and_2.IN1
+Ci => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum4b|lab001:sum2
+A => xor_1.IN0
+A => and_1.IN0
+B => xor_1.IN1
+B => and_1.IN1
+Ci => and_2.IN1
+Ci => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum4b|lab001:sum3
+A => xor_1.IN0
+A => and_1.IN0
+B => xor_1.IN1
+B => and_1.IN1
+Ci => and_2.IN1
+Ci => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
