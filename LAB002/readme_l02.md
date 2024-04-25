@@ -7,7 +7,7 @@ Un sumador de 4 bits es un circuito lógico que realiza la operación de suma bi
 El informe detalla el proceso desde la concepción del diseño hasta la simulación y verificación funcional del circuito en Quartus. Se presentan capturas de pantalla y explicaciones paso a paso para facilitar la comprensión del procedimiento llevado a cabo. Al finalizar, se ofrece una evaluación del funcionamiento del sumador de 4 bits.
 
 # Diseño del Circuito
-![](/Imagenes_Lab002/1.png)
+![](/LAB002/Imagenes_Lab002/1.png)
 En el diseño de circuitos digitales, es común utilizar la modularidad para simplificar la implementación de circuitos más complejos. Un sumador de 1 bit es el bloque básico que se utiliza para construir sumadores de mayor tamaño, como un sumador de 4 bits. La belleza de esta técnica radica en su simplicidad y eficiencia.
 
 Un sumador de 1 bit es un circuito que toma dos bits de entrada y produce una suma de un bit y un acarreo (carry-out). Al unir cuatro sumadores de 1 bit, podemos construir un sumador de 4 bits. En este enfoque, cada sumador de 1 bit se encarga de sumar un par de bits correspondientes de los números de entrada, mientras que los acarreos se propagan de un sumador al siguiente.
@@ -26,7 +26,7 @@ En el código de Quartus, cada sumador de 1 bit se representaría como un módul
 
 - Abrimos Quartus y creamos un nuevo proyecto en la carpeta "sum4b".
 - Una vez creado el proyecto, configuramos la FPGA seleccionada dentro de Quartus.
-![](/Imagenes_Lab002/4.jpg)
+![](/LAB002/Imagenes_Lab002/4.jpg)
 
 - Creamos un nuevo archivo Verilog dentro del proyecto en Quartus.
 ![](/Imagenes_Lab002/5.jpg)
