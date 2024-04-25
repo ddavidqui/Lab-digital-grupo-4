@@ -69,10 +69,12 @@ En el código de Quartus, cada sumador de 1 bit se representaría como un módul
 
 - Finalmente, en la ventana Programmer le dimos clic al botón Start que inició la programación de la FPGA.
 
-![](/LAB002/Imagenes_Lab002/13.jpg)
+![](/LAB002/Imagenes_Lab002/13.png)
 
 - Una vez finalizada la programación, conectamos la FPGA a la computadora.
 - Realizamos pruebas para verificar que el sumador de 4 bits funcione correctamente.
+# Video de funcionamiento en la FPGA
+https://youtu.be/V6SwwRPSi0w?si=3nxMFMWkOmhUfmJv
 
 # CREACIÓN DE TESTBENCH PARA LA SIMULACIÓN
 
@@ -92,10 +94,81 @@ En el código de Quartus, cada sumador de 1 bit se representaría como un módul
 
 ![](/LAB002/Imagenes_Lab002/simulacion.png)
 
-![](/LAB002/Imagenes_Lab002/sumador1.png)
+# Sumas Binarias en un Bus de 4 bits
 
-![](/LAB002/Imagenes_Lab002/sumador2.png)
+# Sumas Binarias en un Bus de 4 bits
 
+A continuación, se muestran varias sumas en binario realizadas en un bus de 4 bits, junto con sus resultados correspondientes:
+
+## 1. Primer caso:
+   
+   0 + 0:
+    
+    0000  (0 en binario)  
+    0000  (0 en binario)
+  -------
+    0000  (0 en binario)
+    
+   En esta suma, ambos operandos son 0, por lo que el resultado también es 0.
+
+## 2. Segundo caso:
+   
+    2 + 2:
+    
+    0010  (2 en binario)  
+    0010  (2 en binario)
+  -------
+    0100  (4 en binario)
+    
+   La suma de 2 en binario más 2 en binario es 4 en decimal y es lo que muestra la salida.
+
+## 3. Tercer caso:
+  
+   6 + 6:
+    
+    0110  (6 en binario)  
+    0110  (6 en binario)
+  -------
+    1100  (12 en binario)
+    
+   La suma de 6 en binario más 6 en binario es 12 en decimal y es lo que muestra la salida.
+
+*AQUÍ COMENZAMOS UTILIZANDO EL ACARREO YA QUE TENEMOS UN BUS DE 4 BIT, ENTONCES VEREMOS UN 1 EN EL ACARREO REPRESENTANDO EL MÁS SIGNIFICATIVO*
+
+## 4. Cuarto caso:
+  
+   8 + 8:
+    
+    1000  (8 en binario)  
+    1000  (8 en binario)
+  -------
+ 1 0000  (16 en binario)
+    
+   La suma de 8 en binario más 8 en binario es 16 en decimal, pero solo conservamos los últimos 4 bits, lo que nos da "0000" en binario y 0 en decimal y es lo que veremos en la salida.
+
+## 5. Quinto caso:
+  
+   12 + 12:
+    
+    1100  (12 en binario)  
+    1100  (12 en binario)
+  -------
+1 1000  (24 en binario)
+    
+   La suma de 12 en binario más 12 en binario es 24 en decimal, pero solo conservamos los últimos 4 bits, lo que nos da "1000" en binario y 8 en decimal que irá en la salida.
+
+## 6. Sexto caso:
+  
+   15 + 15:
+    
+    1111  (15 en binario)  
+    1111  (15 en binario)
+  -------
+1 1110  (30 en binario)
+    
+   La suma de 15 en binario más 15 en binario es 30 en binario, pero solo conservamos los últimos 4 bits, lo que nos da "1110" en binario que sería 14 en decimal.
+
+Estas son las sumas en binario y sus resultados correspondientes cuando se utiliza un bus de 4 bits.
 
 
 
