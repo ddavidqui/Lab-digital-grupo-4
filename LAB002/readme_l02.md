@@ -15,13 +15,13 @@ Un sumador de 1 bit es un circuito que toma dos bits de entrada y produce una su
 Este concepto se refleja directamente en el código de Quartus. Al diseñar un sumador de 4 bits en Quartus, simplemente necesitamos replicar el diseño del sumador de 1 bit cuatro veces y conectar correctamente las entradas y salidas. Quartus nos permite crear instancias de módulos y conectarlas entre sí de manera eficiente, lo que facilita enormemente la implementación de circuitos complejos a partir de componentes simples.
 
 En el código de Quartus, cada sumador de 1 bit se representaría como un módulo o una función que toma dos bits de entrada y produce una suma de un bit y un acarreo. Luego, estas instancias se instanciarían cuatro veces y se conectarían apropiadamente para formar el sumador de 4 bits. El código resultante es limpio, modular y fácil de entender, lo que facilita el diseño y la depuración del circuito.
-![](/Imagenes_Lab002/2.png)
+![](/LAB002/Imagenes_Lab002/2.png)
 
 
 # Creación del Proyecto en Quartus
 
 - Creamos una carpeta con el nombre "sum2b" donde almacenaremos todos los archivos relacionados con nuestro proyecto, incluyendo el archivo "sum1b.v" que será instanciado más adelante.
-![](/Imagenes_Lab002/3.jpg)
+![](/LAB002/Imagenes_Lab002/3.jpg)
 
 
 - Abrimos Quartus y creamos un nuevo proyecto en la carpeta "sum4b".
@@ -29,26 +29,26 @@ En el código de Quartus, cada sumador de 1 bit se representaría como un módul
 ![](/LAB002/Imagenes_Lab002/4.jpg)
 
 - Creamos un nuevo archivo Verilog dentro del proyecto en Quartus.
-![](/Imagenes_Lab002/5.jpg)
+![](/LAB002/Imagenes_Lab002/5.jpg)
 
 
 
 - En ese archivo Verilog es donde vamos a escribir el código de nuestro sumador de 4 bits.
 
-![](/Imagenes_Lab002/6.jpg)
+![](/LAB002/Imagenes_Lab002/6.jpg)
 - Al terminar de escribirlo le damos en la opción “Start Analysis & Elaboration” para comprobar que no salga ningún error.
-![](/Imagenes_Lab002/7.jpg)
+![](/LAB002/Imagenes_Lab002/7.jpg)
 - Asignamos cada entrada y salida del diseño Verilog a los pines específicos de la FPGA en la opción “Pin Planer”, en la columna “Location” se podrá seleccionar los pines de la FPGA asociados a ciertos elementos, en este caso, se van a usar switchs para las entradas y leds para las salidas, dicha numeración se podrá observar directamente en la FPGA.
-![](/Imagenes_Lab002/8.jpg)
-![](/Imagenes_Lab002/9.jpg)
+![](/LAB002/Imagenes_Lab002/8.jpg)
+![](/LAB002/Imagenes_Lab002/9.jpg)
 - Al terminar de asignar cada pin con su respectiva entrada o salida, le damos de nuevo en la opción “Run I/O Assignment Analysis” para asegurarnos de que no salga ningún error.
-![](/Imagenes_Lab002/10.jpg)
+![](/LAB002/Imagenes_Lab002/10.jpg)
 - Abrimos la ventana Programmer en Quartus.
-![](/Imagenes_Lab002/11.jpg)
+![](/LAB002/Imagenes_Lab002/11.jpg)
 - En la ventana Programmer le dimos clic al botón Hardware Setup que abrió usa sub ventana en donde seleccionamos el USB-blaster de la FPGA como se muestra en la imagen.
-![](/Imagenes_Lab002/12.png)
+![](/LAB002/Imagenes_Lab002/12.png)
 - Finalmente, en la ventana Programmer le dimos clic al botón Start que inició la programación de la FPGA.
-![](/Imagenes_Lab002/13.jpg)
+![](/LAB002/Imagenes_Lab002/13.jpg)
 - Una vez finalizada la programación, conectamos la FPGA a la computadora.
 - Realizamos pruebas para verificar que el sumador de 4 bits funcione correctamente.
 
@@ -67,9 +67,9 @@ En el código de Quartus, cada sumador de 1 bit se representaría como un módul
 - `#240 $finish;`: En este bloque `initial begin`, después de guardar la simulación en el archivo VCD, se finaliza la simulación después de 240 unidades de tiempo.
 
 # A continuación se explicará los resultados de la simulación en 6 casos en especifico:
-![](/Imagenes_Lab002/simulacion.png)
-![](/Imagenes_Lab002/sumador1.png)
-![](/Imagenes_Lab002/sumador2.png)
+![](/LAB002/Imagenes_Lab002/simulacion.png)
+![](/LAB002/Imagenes_Lab002/sumador1.png)
+![](/LAB002/Imagenes_Lab002/sumador2.png)
 
 
 
