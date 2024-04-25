@@ -8,11 +8,11 @@ b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
 ci => ~NO_FANOUT~
-s[0] <= lab001:sum0.S
-s[1] <= lab001:sum1.S
-s[2] <= lab001:sum2.S
-s[3] <= lab001:sum3.S
-co <= lab001:sum3.Co
+s[0] << lab001:sum0.S
+s[1] << lab001:sum1.S
+s[2] << lab001:sum2.S
+s[3] << lab001:sum3.S
+co << lab001:sum3.Co
 
 
 |sum4b|lab001:sum0

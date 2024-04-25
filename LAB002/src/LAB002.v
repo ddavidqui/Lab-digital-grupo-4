@@ -1,4 +1,3 @@
-`include "lab001.v"
 
 module sum4b(a, b, ci, s, co);
 
