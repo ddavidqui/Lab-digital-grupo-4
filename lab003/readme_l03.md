@@ -16,29 +16,29 @@ Lograr visualizar en una pantalla de 7 segmentos los números del 0 al F en form
 
 **Conversión de Binario a Hexadecimal:**
 Lo primero que realizamos fue pasar el código del conversor de binario a hexadecimal lo copiamos en Visual Studio:
-![](/LAB003/Imagenes_Lab003/1.png)
+![](/lab003/Imagenes_Lab003/1.png)
 
 **Creación del Test Bench para Simulación en GTKWave:**
 Creamos el test bench para simularlo en GTKWave:
-![](/LAB003/Imagenes_Lab003/2.png)
-![](/LAB003/Imagenes_Lab003/3.png)
+![](/lab003/Imagenes_Lab003/2.png)
+![](/lab003/Imagenes_Lab003/3.png)
 
 **Simulación en GTKWave:**
 Corremos nuestros códigos en GTKWave.
-![](/LAB003/Imagenes_Lab003/4.png)
+![](/lab003/Imagenes_Lab003/4.png)
 
 #### Números del 0 al 9
 
 **Modificación del Código para Mostrar Solo Números del 0 al 9:**
 El mismo código del conversor anterior lo usamos lo único que hacemos es comentar los casos para los valores de A a F dejando solo los del 0 al 9:
-![](/LAB003/Imagenes_Lab003/5.png)
+![](/lab003/Imagenes_Lab003/5.png)
 
 **Uso del Mismo Test Bench:**
 Podemos usar el mismo test bench ya que nuestro código del conversor tiene un default que hace que nos sirva.
 
 **Simulación en GTKWave:**
 Corremos nuestros códigos en GTKWave.
-![](/LAB003/Imagenes_Lab003/6.png)
+![](/lab003/Imagenes_Lab003/6.png)
 
 ## Segunda Parte: Visualización de la Suma de Dos Números de 3 Bits
 
@@ -49,16 +49,16 @@ Lograr visualizar en una pantalla de 7 segmentos la suma de dos números de 3 bi
 
 **Modificación del Código del Sumador:**
 Lo primero que hicimos fue reciclar el código del laboratorio anterior que era un sumador de 4 bits y lo convertimos en uno de 3 bits.
-![](/LAB003/Imagenes_Lab003/7.png)
-![](/LAB003/Imagenes_Lab003/8.png)
+![](/lab003/Imagenes_Lab003/7.png)
+![](/lab003/Imagenes_Lab003/8.png)
 
 **Conexión con el Conversor de Binario a Hexadecimal:**
 Luego conectamos con un top model la salida del sumador a nuestro conversor de binario a hexadecimal.
-![](/LAB003/Imagenes_Lab003/9.png)
+![](/lab003/Imagenes_Lab003/9.png)
 
 **Creación y Simulación del Test Bench:**
 Creamos nuestro test bench y lo simulamos en GTKWave.
-![](/LAB003/Imagenes_Lab003/10.png)
-![](/LAB003/Imagenes_Lab003/11.png)
-![](/LAB003/Imagenes_Lab003/12.png)
-![](/LAB003/Imagenes_Lab003/13.png)
+![](/lab003/Imagenes_Lab003/10.png)
+![](/lab003/Imagenes_Lab003/11.png)
+![](/lab003/Imagenes_Lab003/12.png)
+![](/lab003/Imagenes_Lab003/13.png)
