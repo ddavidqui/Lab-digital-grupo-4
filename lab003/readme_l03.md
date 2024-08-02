@@ -25,6 +25,8 @@ Creamos el test bench para simularlo en GTKWave:
 
 **Simulación en GTKWave:**
 Corremos nuestros códigos en GTKWave.
+
+
 ![](/lab003/Imagenes_Lab003/4.jpg)
 
 #### Números del 0 al 9
@@ -38,6 +40,8 @@ Podemos usar el mismo test bench ya que nuestro código del conversor tiene un d
 
 **Simulación en GTKWave:**
 Corremos nuestros códigos en GTKWave.
+
+
 ![](/lab003/Imagenes_Lab003/6.jpg)
 
 ## Segunda Parte: Visualización de la Suma de Dos Números de 3 Bits
