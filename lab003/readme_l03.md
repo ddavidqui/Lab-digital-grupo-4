@@ -27,7 +27,7 @@ Creamos el test bench para simularlo en GTKWave:
 Corremos nuestros códigos en GTKWave.
 
 
-![](/lab003/Imagenes_Lab003/4.jpg)
+![](/lab003/Imagenes_Lab003/4.jpg) alt="Imagen" style="width:200%;
 
 #### Números del 0 al 9
 
