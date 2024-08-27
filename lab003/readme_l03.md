@@ -66,3 +66,6 @@ Creamos nuestro test bench y lo simulamos en GTKWave.
 ![](/lab003/Imagenes_Lab003/11.jpg)
 ![](/lab003/Imagenes_Lab003/12.jpg)
 ![](/lab003/Imagenes_Lab003/13.jpg)
+
+**Explicación :**
+
