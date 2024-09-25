@@ -1,5 +1,5 @@
-//`include "sonic.v"
-//`include "buzzer.v"
+`include "sonic.v"
+`include "buzzer.v"
 
 module top(
     input clk50,

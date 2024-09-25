@@ -270,7 +270,43 @@ El sistema está compuesto por tres módulos en Verilog:
       - Los LEDs RGB también se controlan dentro del módulo `sonic`, cambiando de color según la distancia medida (rojo, azul o verde).
 
 
-## 5. Simulación y Verificación
+## 5. Máquina de Estados
+
+Para estos módulos, podemos definir una máquina de estados que controle el funcionamiento del sistema, principalmente para gestionar la activación del buzzer y los LEDs en función de la medida de distancia. A continuación se presenta la propuesta de la máquina de estados, junto con una explicación.
+
+### Máquina de Estados
+
+La máquina de estados tiene cuatro estados principales, basados en la distancia medida por el sensor ultrasónico:
+
+- **IDLE**: El sistema está esperando una medición o procesando la distancia, los LED y el timbre están desactivados.
+- **CLOSE_RANGE**: La distancia es menor a 10 cm. El timbre se activa y el LED rojo se enciende para indicar proximidad peligrosa.
+- **MEDIUM_RANGE**: La distancia está entre 10 y 30 cm. Se enciende el LED azul para anunciar una distancia media de aproximación.
+- **SAFE_RANGE**: La distancia está entre 30 y 50 cm. Se enciende el LED verde para indicar que la distancia es segura.
+
+Si la distancia es mayor a 50 cm, el sistema apaga todos los LED y desactiva el timbre.
+
+### Transiciones de la Máquina de Estados
+
+- De **IDLE** a **CLOSE_RANGE**: Cuando la distancia medida es menor a 10 cm.
+- De **IDLE** a **MEDIUM_RANGE**: Cuando la distancia medida está entre 10 y 30 cm.
+- De **IDLE** a **SAFE_RANGE**: Cuando la distancia medida está entre 30 y 50 cm.
+- De cualquier estado a **IDLE**: Si la distancia supera los 50 cm, apagamos todo.
+- De **CLOSE_RANGE** a **MEDIUM_RANGE**: Si la distancia aumenta y entra en el rango medio (10-30 cm).
+- De **MEDIUM_RANGE** a **SAFE_RANGE**: Si la distancia aumenta a más de 30 cm.
+
+### Explicación de la Máquina de Estados
+
+La máquina de estados es responsable de administrar el comportamiento del sistema en función de la distancia medida por el sensor ultrasónico. Cada estado representa un rango de distancia y dicta cómo deben comportarse los LED y el timbre. La lógica de la máquina de estados ayuda a organizar el control del sistema de manera eficiente, permitiendo transiciones claras y predecibles entre las diferentes acciones del sistema.
+
+En la implementación actual del código Verilog, la lógica para manejar los diferentes rangos de distancia y las acciones asociadas ya está integrada en el módulo `sonic.v`. Sin embargo, podríamos expandir esto a una máquina de estados más formal con una declaración `case` que controle los estados y las transiciones de acuerdo con las distancias medidas.
+
+Si tienes más detalles que quieras agregar o modificar, ¡dime y ajustamos la máquina de estados!
+
+![](/PROYECTO/Imagenes_Proyecto/Maquina.png)
+
+
+
+## 6. Simulación y Verificación
 
 ![](/PROYECTO/Imagenes_Proyecto/simulación.png)
 
@@ -371,3 +407,5 @@ Las pruebas realizadas en simulaciones demostraron que el sistema funciona corre
 
 ## 7. Conclusión
 El sistema de estacionamiento asistido fue implementado con éxito, cumpliendo con los objetivos establecidos. Las simulaciones confirmaron que el sensor ultrasónico, el LED RGB y el buzzer funcionan correctamente para proporcionar alertas visuales y sonoras al conductor, asistiendo en maniobras de estacionamiento seguras. La implementación en hardware puede seguir el mismo flujo descrito para validar el funcionamiento en tiempo real.
+
+![](/PROYECTO/Imagenes_Proyecto/Equipo.png)
